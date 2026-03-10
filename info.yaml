@@ -4,7 +4,7 @@ project:
   title:        "First_ChipDesign Gates"      # Project title
   author:       "Ishmael Njoka"      # Your name
   discord:      "mur.nj0ka"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Testing some logic gates on a segment display"      # One line description of what your project does
+  description:  "Impementing an unlock signal of 1011 to output the letter N"      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -15,25 +15,24 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
-  # Inputs
-  ui[0]: "input nor"
-  ui[1]: "input b"
-  ui[2]: "input xor"
-  ui[3]: "input xor"
-  ui[4]: "input e"
-  ui[5]: "input nor"
-  ui[6]: "input nor"
-  ui[7]: ""
+  ui[0]: "DIP switch IN0"
+  ui[1]: "DIP switch IN1"
+  ui[2]: "DIP switch IN2"
+  ui[3]: "DIP switch IN3"
+  ui[4]: ""   
+  ui[5]: ""   
+  ui[6]: ""   
+  ui[7]: ""   
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "Unlock signal (AND of code 1010)"
+  uo[1]: "Inverted unlock (active-low for display)"
+  uo[2]: "Segment a"
+  uo[3]: "Segment b"
+  uo[4]: "Segment c"
+  uo[5]: "Segment e"
+  uo[6]: "Segment f"
+  uo[7]: "Segment g"
 
   # Bidirectional pins
   uio[0]: ""
