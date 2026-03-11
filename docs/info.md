@@ -8,7 +8,7 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 ## 🔹 How It Works
-- The circuit uses **DIP switches** (IN0–IN3) as inputs to form a secret code (`1010`).  
+- The circuit uses **DIP switches** (IN0–IN3) as inputs to form a secret code (`1011`).  
 - These inputs are processed through **NOT gates** (to handle “must be 0” conditions) and cascaded **AND gates** to generate an **unlock signal**.  
 - The unlock signal is then **inverted** to match the active‑low nature of the 7‑segment display.  
 - When the correct code is entered, the inverted unlock drives the segments **a, b, c, d, e**, forming the letter **N**.  
